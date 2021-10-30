@@ -9,6 +9,9 @@ import Login from './components/Login/Login';
 import AddPackage from './components/AddPackage/AddPackage';
 import ManageAllBookings from './components/ManageAllBookings/ManageAllBookings';
 import MyBookings from './components/MyBookings/MyBookings';
+import PackageDetail from './components/PackageDetail/PackageDetail';
+import NotFound from './components/NotFound/NotFound';
+import BookingSuccessful from './components/BookingSuccessful/BookingSuccessful';
 
 initializeAuthentication()
 
@@ -36,6 +39,15 @@ function App() {
           </Route>
           <Route path='/login'>
             <Login></Login>
+          </Route>
+          <Route path='/packages/:id'>
+            <PackageDetail></PackageDetail>
+          </Route>
+          <Route path='/bookingsuccessful'>
+            <BookingSuccessful></BookingSuccessful>
+          </Route>
+          <Route path='*'>
+            <NotFound></NotFound>
           </Route>
         </Switch>
       </BrowserRouter>

@@ -11,7 +11,6 @@ const AddPackage = () => {
                 console.log(res)
                 reset()
             })
-            
     };
     return (
         <div className="mid-page align-items-center d-flex justify-content-center flex-column">
