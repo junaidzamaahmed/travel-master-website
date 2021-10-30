@@ -34,7 +34,7 @@ function App() {
           <Route path='/manageallbookings'>
             <ManageAllBookings></ManageAllBookings>
           </Route>
-          <Route path='/mybookings'>
+          <Route path='/mybookings/:userID'>
             <MyBookings></MyBookings>
           </Route>
           <Route path='/login'>

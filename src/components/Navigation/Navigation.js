@@ -69,7 +69,7 @@ const Navigation = () => {
                         </NavHashLink>}
                         {user?.displayName && <NavHashLink
                             className="text-decoration-none mx-3 nav-item nav-links text-dark"
-                            to="/mybookings"
+                            to={`/mybookings/${user?.uid}`}
                             activeClassName="primary-text nav-border-bottom"
                         >
                             My Bookings

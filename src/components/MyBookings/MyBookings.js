@@ -1,19 +1,37 @@
-import React from 'react';
-import { Button, Container } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
+import Booking from '../Booking/Booking';
 
 const MyBookings = () => {
+    const { userID } = useParams()
+    const [orders, setOrders] = useState()
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        setIsLoading(true)
+        fetch('https://tripmasterserver.herokuapp.com/orders/' + userID)
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                setOrders(data)
+                setIsLoading(false)
+            })
+    }, [])
+
+    if (isLoading) {
+        return (
+            <div className="mid-page align-items-center d-flex justify-content-center">
+                <div className="spinner-border text-success" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <div className="nav-margin">
-            <Container>
-                <div class="card">
-                    <h5 class="card-header">Featured</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <Button class="primary-background button text-light text-decoration-none px-4 py-2 rounded-pill nav-item primary-button text-center">Approve</Button>
-                    </div>
-                </div>
-            </Container>
+            <h2 className="text-center">Number of your bookings: {orders?.length}</h2>
+            {orders?.map(order => <Booking key={order?._id} order={order}></Booking>)}
         </div>
     );
 };

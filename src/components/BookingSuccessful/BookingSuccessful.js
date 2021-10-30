@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const BookingSuccessful = () => {
     return (
         <div className="d-flex justify-content-center align-items-center vh-100 flex-column">
-            <h1 className="primary-text fs-bold"><i class="fas fa-check-circle text-success"></i> Congratulations!</h1>
+            <h1 className="primary-text fs-bold"><i className="fas fa-check-circle text-success"></i> Congratulations!</h1>
             <p className="fs-3 text-center">You have successfully booked your package!</p>
             <div className="d-flex justify-content-center">
                 <NavLink

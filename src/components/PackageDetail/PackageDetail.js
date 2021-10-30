@@ -49,6 +49,8 @@ const PackageDetail = () => {
                             <option value="Female">Female</option>
                             <option value="Other">Other</option>
                         </select>
+                        <label htmlFor="userid">You Unique ID - *DO NOT EDIT THIS*</label>
+                        <input id="userid" className="mb-2 rounded-pill p-2" {...register("userID", { required: true })} defaultValue={user?.uid} />
                         <input className="primary-background button text-light text-decoration-none px-4 py-2 rounded-pill nav-item primary-button text-center mb-5 mt-2" type="submit" />
                     </form>
                 </div>
