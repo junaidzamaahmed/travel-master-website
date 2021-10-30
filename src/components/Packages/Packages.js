@@ -5,7 +5,7 @@ import Package from '../Package/Package';
 const Packages = () => {
     const [packages, setPackages] = useState();
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://tripmasterserver.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => {
                 console.log(data)

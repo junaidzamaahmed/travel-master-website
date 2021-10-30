@@ -6,7 +6,7 @@ import './AddPackage.css'
 const AddPackage = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/packages', data)
+        axios.post('https://tripmasterserver.herokuapp.com/packages', data)
             .then(res => {
                 console.log(res)
                 reset()
