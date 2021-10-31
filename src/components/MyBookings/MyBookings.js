@@ -17,6 +17,12 @@ const MyBookings = () => {
                 setIsLoading(false)
             })
     }, [])
+    const deleteRefresh = (deletedCount, orderID) => {
+        if (deletedCount === 1) {
+            const remaining = orders?.filter(order => order._id !== orderID)
+            setOrders(remaining)
+        }
+    }
 
     if (isLoading) {
         return (
@@ -31,7 +37,7 @@ const MyBookings = () => {
     return (
         <div className="nav-margin">
             <h2 className="text-center">Number of your bookings: {orders?.length}</h2>
-            {orders?.map(order => <Booking key={order?._id} order={order}></Booking>)}
+            {orders?.map(order => <Booking key={order?._id} order={order} deleteRefresh={deleteRefresh}></Booking>)}
         </div>
     );
 };
