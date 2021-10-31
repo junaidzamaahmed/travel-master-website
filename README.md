@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Trip Master
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Click here](https://trip-master-project.web.app/home) to get redirected to the great website of Trip Master.
 
-## Available Scripts
+## What is Trip Master?
 
-In the project directory, you can run:
+The details about Trip Master are given below:
 
-### `npm start`
+* `What is it?`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It is one of the best travel agencies in the world.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* `What does Trip Master provide other than air tickets?`
 
-### `npm test`
+Trip master provides you with the best tour packages at the most reasonable price.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* `What can I extract from Trip Master?`
 
-### `npm run build`
+You'll get the most luxury and the most fascinating experience by travelling with Trip Master.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* `Our payment methods?`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Any bank or credit/debit card in the world.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* `Offers`
 
-### `npm run eject`
+You'll find discounts on particular packages on our website for the whole year.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## How can I contact Trip Master?
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You can fill up the form on our website's contact section on the home page (or call us at +880 0188888456 for emergency). We will contact you through email. Kindly check your email regularly after you submit your form.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you.
