@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 
 const Contact = () => {
     return (
-        <div className="container my-5">
+        <div id="contact" className="container my-5">
             <h2 className="text-center py-5 fs-1"><span className="nav-border-bottom">Contact Us</span></h2>
             <p className="text-center">Fill up the form and submit, we'll get in touch with you very soon!</p>
             <div id="contact" class="row g-4">
