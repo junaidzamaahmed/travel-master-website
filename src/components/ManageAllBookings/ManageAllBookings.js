@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Booking from '../Booking/Booking';
 
@@ -24,6 +25,25 @@ const ManageAllBookings = () => {
         }
     }
 
+    const handleApproveClick = (orderID) => {
+        axios.put(`https://tripmasterserver.herokuapp.com/approve/${orderID}`)
+            .then(res => {
+                console.log(res)
+                if (res.data.modifiedCount === 1) {
+                    console.log(res.data.modifiedCount)
+                    setIsLoading(true)
+                    fetch('https://tripmasterserver.herokuapp.com/orders')
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data)
+                            setOrders(data)
+                            setIsLoading(false)
+                            alert("Order approval successful!")
+                        })
+                }
+            })
+    }
+
     if (isLoading) {
         return (
             <div className="mid-page align-items-center d-flex justify-content-center">
@@ -37,7 +57,7 @@ const ManageAllBookings = () => {
     return (
         <div className="nav-margin">
             <h2 className="text-center">Number of your bookings: {orders?.length}</h2>
-            {orders?.map(order => <Booking key={order?._id} order={order} deleteRefresh={deleteRefresh}></Booking>)}
+            {orders?.map(order => <Booking key={order?._id} order={order} deleteRefresh={deleteRefresh} handleApproveClick={handleApproveClick}></Booking>)}
         </div>
     );
 };
