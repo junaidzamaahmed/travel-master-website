@@ -55,7 +55,7 @@ const MyBookings = () => {
     }
 
     return (
-        <div className="nav-margin">
+        <div className="nav-margin vh-100">
             <h2 className="text-center">Number of your bookings: {orders?.length}</h2>
             {orders?.map(order => <Booking key={order?._id} order={order} deleteRefresh={deleteRefresh} handleApproveClick={handleApproveClick}></Booking>)}
         </div>

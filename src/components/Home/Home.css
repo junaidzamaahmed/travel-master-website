@@ -20,7 +20,7 @@ h1{
 }
 
 .vh-100{
-    height: 100vh;
+    min-height: 70vh !important;
 }
 
 @media only screen and (max-width:991px){

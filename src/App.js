@@ -13,6 +13,7 @@ import PackageDetail from './components/PackageDetail/PackageDetail';
 import NotFound from './components/NotFound/NotFound';
 import BookingSuccessful from './components/BookingSuccessful/BookingSuccessful';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Footer from './components/Footer/Footer';
 
 initializeAuthentication()
 
@@ -51,6 +52,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </BrowserRouter>
       </AuthProvider>
     </div>

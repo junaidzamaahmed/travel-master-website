@@ -13,7 +13,7 @@ const AddPackage = () => {
             })
     };
     return (
-        <div className="mid-page align-items-center d-flex justify-content-center flex-column">
+        <div className="mid-page align-items-center d-flex justify-content-center flex-column container">
             <h2 className="text-center py-5 fs-1"><span className="nav-border-bottom">Add a new Package</span></h2>
             <form className="d-flex justify-content-center flex-column" onSubmit={handleSubmit(onSubmit)}>
                 <input className="mb-2 rounded" placeholder="Place Name" {...register("title", { required: true })} />
