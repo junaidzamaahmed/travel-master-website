@@ -9,11 +9,12 @@ const useFirebase = () => {
     const provider = new GoogleAuthProvider();
     const auth = getAuth();
 
-    const signInWithGoogle = () => {
+    const signInWithGoogle = (redirected_url, history) => {
         signInWithPopup(auth, provider)
             .then((result) => {
                 console.log(result.user)
                 setUser(result.user)
+                history.push(redirected_url)
             }).catch((error) => {
                 console.log(error.message)
             });

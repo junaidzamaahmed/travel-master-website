@@ -12,6 +12,7 @@ import MyBookings from './components/MyBookings/MyBookings';
 import PackageDetail from './components/PackageDetail/PackageDetail';
 import NotFound from './components/NotFound/NotFound';
 import BookingSuccessful from './components/BookingSuccessful/BookingSuccessful';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 initializeAuthentication()
 
@@ -28,24 +29,24 @@ function App() {
           <Route path='/home'>
             <Home></Home>
           </Route>
-          <Route path='/addpackage'>
+          <PrivateRoute path='/addpackage'>
             <AddPackage></AddPackage>
-          </Route>
-          <Route path='/manageallbookings'>
+          </PrivateRoute>
+          <PrivateRoute path='/manageallbookings'>
             <ManageAllBookings></ManageAllBookings>
-          </Route>
-          <Route path='/mybookings/:userID'>
+          </PrivateRoute>
+          <PrivateRoute path='/mybookings/:userID'>
             <MyBookings></MyBookings>
-          </Route>
+          </PrivateRoute>
           <Route path='/login'>
             <Login></Login>
           </Route>
-          <Route path='/packages/:id'>
+          <PrivateRoute path='/packages/:id'>
             <PackageDetail></PackageDetail>
-          </Route>
-          <Route path='/bookingsuccessful'>
+          </PrivateRoute>
+          <PrivateRoute path='/bookingsuccessful'>
             <BookingSuccessful></BookingSuccessful>
-          </Route>
+          </PrivateRoute>
           <Route path='*'>
             <NotFound></NotFound>
           </Route>
