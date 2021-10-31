@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
+import About from '../About/About';
+import Contact from '../Contact/Contact';
 import Packages from '../Packages/Packages';
 import "./Home.css"
 
@@ -26,6 +28,8 @@ const Home = () => {
                             </Container>
                         </div>
                         <Packages></Packages>
+                        <Contact></Contact>
+                        <About></About>
                     </>
             }
         </div>

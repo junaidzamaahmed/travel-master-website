@@ -12,7 +12,6 @@ const Login = () => {
     const redirected_url = location.state?.from || '/'
 
     return (
-        // <div className="container">
             <div className="mid-page align-items-center d-flex justify-content-center flex-column container">
                 <h2 className="text-center py-5 fs-1"><span className="nav-border-bottom">Login</span></h2>
                 <Button
@@ -23,7 +22,6 @@ const Login = () => {
                     <i className="fab fa-google"></i> Sign In With Google
                 </Button>
             </div>
-        // </div>
     );
 };
 
